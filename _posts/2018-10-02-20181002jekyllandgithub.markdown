@@ -1,0 +1,26 @@
+---
+layout: post
+title: "jekyll-and-github"
+date: "2018-10-02 00:51:13 +0800"
+---
+
+how to config github with jekyll?
+
+
+# 小目标1
+  github.com写markdown文件，github.io上面查看内容
+
+## 步骤1
+  github.com上面新建新建项目，比如：jekyll-demo
+
+## 步骤2
+  setting->GitHub Pages中修改source为master branch
+
+## 步骤3
+  在步骤2的位置，出现一个新的URL，点击URL，查看内容
+
+## 步骤4
+  步骤2位置，可以选择主题Theme，变化网页风格
+
+## 步骤5
+  添加新的markdown文件，github.io预览查看
