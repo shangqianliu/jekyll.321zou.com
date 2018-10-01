@@ -1,6 +1,7 @@
 title: blog.max.top-min.top
-description: blog.max.top-min.top
+#description: blog.max.top-min.top
 show_downloads: false
+show_github_btn: false
 
 baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
 url: "https://lorepirri.github.io" # change this to the base hostname & protocol for your site
