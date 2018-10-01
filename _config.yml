@@ -2,6 +2,8 @@ title: blog(top(max-min))
 #description: blog.max.top-min.top
 show_downloads: false
 show_github_btn: false
+cayman-blog:
+        date_format: "%Y-%m-%d"
 
 baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
 url: "https://blog.max.top-min.top/" # change this to the base hostname & protocol for your site
