@@ -2,24 +2,30 @@
 layout: post
 title: "如何用jekyll写博客"
 date: "2018-10-02 15:34:03 +0800"
+author: "友"
 ---
 
+
 ### 前言
-上一篇结束了如果有github写博客，github后台会生成静态文件内容，而这个生成静态文件的功能就是由jekyll完成，而且jekyll可以本地安装，下面就讲解如果搭建本地环境。
+上一篇介绍了[如果用github写博客](https://blog.max.top-min.top/2018/10/01/writeblogwithgithub.html)，github后台会生成静态文件内容，而这个生成静态文件的功能就是由jekyll完成，而且jekyll可以本地安装，下面就讲解如果搭建本地环境。
 
 ### 原理
-jekyll将markdown文件转换为html文件，就和java里面的freemarker类似
+jekyll将markdown文件转换为html文件(类似于java里面的freemarker）
 
 jekyll使用ruby开发，ruby使用gem管理软件包（类似于java里面的maven）
 
 ### 安装
 安装
 ```
+# 安装jekyll的开发语言ruby，ruby中自带gem
 brew install ruby  # macos
 # yum install ruby # linux ruby版本要>=2.1
-gem install jekyll
+# 需要安装，不安装报错
 gem install bundler
-gem install jekyll-theme-cayman-blog
+
+# 安装jekyll
+gem install jekyll
+
 ```
 ### 使用
 安装完成之后，就可以使用jekyll创建博客空间，然后启动服务，通过浏览器访问，默认路径是：http://127.0.0.1:4000/
@@ -30,3 +36,92 @@ cd blogName
 jekyll server
 ```
 访问[http://127.0.0.1:4000/](http://127.0.0.1:4000/)
+
+### 首次尝试
+新建first-blog.md，然后看看有没有效果，访问http://127.0.0.1:4000/first-blog 出现404，访问http://127.0.0.1:4000/first-blog.md 是原始文件；
+尝试多种方法都不行，最后网上查找相关资料，最后弄懂是怎么回事
+
+### jekyll特点
+- 文件命名规则
+  - 默认只能识别：yyyy-MM-dd-title.md这种格式
+  - 识别后才会转换为静态html
+  - 才会在首页展示
+- 目录规则
+  - _posts : 博客编写目录，默认生成一个xxx-welcome-to-jekyll.markdown
+  - _layouts : 页面模板目录
+  - _site : 生成的静态文件目录
+- 特殊文件
+  - _config.yml ： 整个网站的配置
+  - Gemfile : 类似于 pom.xml文件，配置jekyll的依赖包
+
+### 模板引擎
+打开默认生成的xxx-welcome-to-jekyll.markdown文件，分析结构
+- header部分： 配置了整个页面的属性对
+  - layout: post (布局模式： post:博客，home：首页)
+  - title： 标题
+  - date: 日期，目录结构: 年/月/日/title
+  - categories: 博客存放的顶级目录，然后在按照 年/月/日/title子目录
+- body部分：博客正文
+  - 静态部分：文本
+  - 动态部分：脚本，{% raw %}开始{% highlight ruby %}内容{% endhighlight %}{% endraw %}结束
+
+### 测试
+在yyyy-MM-dd-first-page.md的header部分添加
+```
+---
+layout: post
+---
+```
+再次从首页访问，发现样式已经装配上了
+
+### 要点
+一篇博客要想正确渲染出来，需要下面两个要点
+- 文件名： yyyy-MM-dd-title.md
+- header部分： 要添加layout设置
+
+### 主题定制
+在[github主题](https://github.com/pages-themes)中，存放默认主题，选择喜欢的主题，每个主题有使用说明，我的操作步骤先全部复制过去，再微调
+1. 下载主题：git clone https://github.com/pages-themes/cayman
+1. 复制主题：把所有内容复制到原来的博客目录
+1. 安装依赖： gem install jekyll-theme-cayman-blog
+1. 重启动jekyll
+
+然后刷新页面，主题页面已经换了，最初写的first-blog已经使用了新主题
+
+### atom集成
+上面都是在命令行下面操作，比较麻烦，github的atom编辑器，有jekyll插件，安装上后，就可以在atom进行编写博客、预览博客，默认每次保存都会生成静态页面，方便预览； 并atom与github集成很好，方便git提交
+
+### 与github集成
+把github项目clone下来之后，把本地博客内容全部复制进去，然后右下角提交，这样github和本地都是通用想效果
+
+### 高级部分
+- jekyll 修改域名和端口： jekyll s -w --host=0.0.0.0 --port 8000
+- _config.yml: 此文件中的变量是 site.varName 在博客中引用
+- _layouts: 中定义了很多变量，可以在_config.yml和博客的header部分配置开关等, 其中site.github是github集成相关，可以修改源码让本地效果和github效果一致
+- 访问统计：在百度统计申请、注册一个网站，复制统计js到 _layouts/default.html中，然后就可以查看网站访问统计
+- Gemfile : 可以配置国内的镜像快，source 'https://gems.ruby-china.com'
+- ruby源码安装：[安装说明](http://rensanning.iteye.com/blog/1927921),把里面版本换成2.3.7
+  - [问题1解决](https://stackoverflow.com/questions/21498868/install-openssl-support-for-self-compiled-ruby-installation)
+  - 问题2解决：cd /usr/local/include/ruby-2.3.0 && ln -s . include
+- 定制域名：微信会对没有注册的域名屏蔽，影响显示效果，需要使用一个注册的域名中转，并且保留原来的域名，没有注册的域名可以联系我帮你中转
+
+
+### 总结
+1. 安装jekyll
+1. 生成博客空间
+1. 安装主题
+1. 与github集成
+1. 与atom集成：编写->预览->提交->查看->分享
+1. 处理微信域名屏蔽
+1. 微调、优化
+
+### 参考
+- [jekyll中文站](https://www.jekyll.com.cn/)
+- [github教程](https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/)
+- [jekyll 部署](https://blog.csdn.net/uselym/article/details/73608638)
+- [用jekyll制作高大上的网站](https://www.cnblogs.com/strick/p/5484779.html)
+- [使用Jekyll搭建自己的博客](https://www.jianshu.com/p/c04475ba80e4)
+- [如何让jekyll服务可以在局域网中访问](https://www.jianshu.com/p/650b96306013)
+- [ruby安装](http://www.runoob.com/ruby/ruby-installation-unix.html)
+- [ruby安装问题解决](http://rensanning.iteye.com/blog/1927921)
+- [Gemfile文件](https://www.cnblogs.com/lwh-note/p/9177726.html)
