@@ -6,7 +6,8 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: home
+title: "blog(max.top-min.top)"
 ---
 
 ## TOP猜想
-top(max)-top(min)=top(max-min)=(max-min).top=[max.top-min.top](https://max.top-min.top)
+top(max)-top(min) = top(max-min) = ( max-min).top = ?
