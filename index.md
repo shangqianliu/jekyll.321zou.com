@@ -9,6 +9,3 @@ layout: home
 ---
 ## TOP 猜想
 top(max)-top(min)=top(max-min)=(max-min).top=max.top-min.top
-
-## 起源
-记录max.top-min.top网站的开发过程，起源一个想法：对性能的极限优化，以及寻找优化的极限

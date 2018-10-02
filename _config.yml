@@ -1,4 +1,4 @@
-title: blog(top(max-min))
+title: blog(max.top-min.top)
 #description: blog.max.top-min.top
 show_downloads: false
 show_github_btn: false
@@ -8,4 +8,4 @@ cayman-blog:
 baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
 url: "https://blog.max.top-min.top/" # change this to the base hostname & protocol for your site
 
-theme: jekyll-theme-cayman-blog 
+theme: jekyll-theme-cayman-blog
