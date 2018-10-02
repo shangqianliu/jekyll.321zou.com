@@ -9,6 +9,9 @@ author: "友"
 ### 前言
 上一篇介绍了[如果用github写博客](https://blog.max.top-min.top/2018/10/01/writeblogwithgithub.html)，github后台会生成静态文件内容，而这个生成静态文件的功能就是由jekyll完成，而且jekyll可以本地安装，下面就讲解如果搭建本地环境。
 
+### 效果
+![整体效果](/assets/img/github-blog.jpg)
+
 ### 原理
 jekyll将markdown文件转换为html文件(类似于java里面的freemarker）
 
@@ -113,9 +116,6 @@ layout: post
 1. 与atom集成：编写->预览->提交->查看->分享
 1. 处理微信域名屏蔽
 1. 微调、优化
-
-### 最终效果
-![整体效果](/assets/img/github-blog.jpg)
 
 ### 参考
 - [jekyll中文站](https://www.jekyll.com.cn/)
