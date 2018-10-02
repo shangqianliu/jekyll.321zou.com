@@ -105,7 +105,6 @@ layout: post
   - 问题2解决：cd /usr/local/include/ruby-2.3.0 && ln -s . include
 - 定制域名：微信会对没有注册的域名屏蔽，影响显示效果，需要使用一个注册的域名中转，并且保留原来的域名，没有注册的域名可以联系我帮你中转
 
-
 ### 总结
 1. 安装jekyll
 1. 生成博客空间
@@ -114,6 +113,9 @@ layout: post
 1. 与atom集成：编写->预览->提交->查看->分享
 1. 处理微信域名屏蔽
 1. 微调、优化
+
+### 最终效果
+![整体效果](/assets/img/github-blog.jpg)
 
 ### 参考
 - [jekyll中文站](https://www.jekyll.com.cn/)
