@@ -9,3 +9,5 @@ baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empt
 url: "https://blog.max.top-min.top/" # change this to the base hostname & protocol for your site
 
 theme: jekyll-theme-cayman-blog
+
+baidu_analytics: true
