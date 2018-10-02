@@ -99,7 +99,6 @@
       </script>
     {% endif %}
 
-
     {% if site.baidu_analytics %}
     <!-- 百度统计 -->
       <script>
@@ -112,46 +111,6 @@
         })();
       </script>
     {% endif %}
-
-
-    <!-- 评论 -->
-    <div class="comments" id="comments">
-      <div id="vcomments"></div>
-    </div>
-    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
-    <script>
-
-      var GUEST = ['nick','mail','link'];
-      var guest = 'nick,mail,link';
-      guest = guest.split(',').filter(item=>{
-        return GUEST.indexOf(item)>-1;
-      });
-      var valine = new Valine();
-      valine.init({
-          el:'#comments',
-          verify: false,
-          notify: true,
-          appId:'gs4XxRz1HG66wfK2k5su02D5-gzGzoHsz',
-          appKey:'SfmoXDMrxNUPUHWIJIoHlsY8',
-          placeholder:'说点...',
-          avatar:'retro',
-          guest_info:guest,
-          pageSize:'10' || 10
-      })
-
-
-    new Valine({
-        el: '#comments' ,
-        verify: false,
-        notify: true,
-        appId: '5BAdoYEcC7XVT5fuceTX1kNQ-gzGzoHsz',
-        appKey: 'usffwFryW1JT4W4TQDBDLHdD',
-        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
-        avatar:'retro',
-        guest_info:guest,
-        pageSize:'10' || 10,
-    });
     </script>
 
   </body>
