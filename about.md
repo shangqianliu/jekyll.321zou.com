@@ -1,13 +1,12 @@
 ---
 layout: page
-title: About
-tagline: A few more words about this theme
+title: 关于
+tagline: 关于网站介绍
 permalink: /about.html
 ---
 
-This is the _Cayman Blog_ Jekyll theme. You can find out more info about customizing this theme, as well as basic usage documentation, and source code at: [cayman-blog](https://github.com/lorepirri/cayman-blog)
+记录max.top-min.top的发展过程
 
-You can find the source code for _Jekyll_ at [jekyll](https://github.com/jekyll/jekyll)
+[max.top-min.top](https://max.top-min.top)
 
-
-[Go to the Home Page]({{ site.url }}{{ site.baseurl }})
+微信： imware
