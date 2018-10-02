@@ -84,10 +84,10 @@ layout: post
 
 ### 主题定制
 在[github主题](https://github.com/pages-themes)中，存放默认主题，选择喜欢的主题，每个主题有使用说明，我的操作步骤先全部复制过去，再微调
-1. 下载主题：git clone https://github.com/pages-themes/cayman
+1. 下载主题：```git clone https://github.com/pages-themes/cayman```
 1. 复制主题：把所有内容复制到原来的博客目录
-1. 安装依赖： gem install jekyll-theme-cayman-blog
-1. 重启动jekyll
+1. 安装依赖： ```gem install jekyll-theme-cayman-blog```
+1. 重启动```jekyll s```
 
 然后刷新页面，主题页面已经换了，最初写的first-blog已经使用了新主题
 
@@ -98,14 +98,14 @@ layout: post
 把github项目clone下来之后，把本地博客内容全部复制进去，然后右下角提交，这样github和本地都是通用想效果
 
 ### 高级部分
-- jekyll 修改域名和端口： jekyll s -w --host=0.0.0.0 --port 8000
+- jekyll 修改域名和端口： ```jekyll s -w --host=0.0.0.0 --port 8000 ```
 - _config.yml: 此文件中的变量是 site.varName 在博客中引用
 - _layouts: 中定义了很多变量，可以在_config.yml和博客的header部分配置开关等, 其中site.github是github集成相关，可以修改源码让本地效果和github效果一致
 - 访问统计：在百度统计申请、注册一个网站，复制统计js到 _layouts/default.html中，然后就可以查看网站访问统计
 - Gemfile : 可以配置国内的镜像快，source 'https://gems.ruby-china.com'
 - ruby源码安装：[安装说明](http://rensanning.iteye.com/blog/1927921),把里面版本换成2.3.7
   - [问题1解决](https://stackoverflow.com/questions/21498868/install-openssl-support-for-self-compiled-ruby-installation)
-  - 问题2解决：cd /usr/local/include/ruby-2.3.0 && ln -s . include
+  - 问题2解决：```cd /usr/local/include/ruby-2.3.0 && ln -s . include```
 - 定制域名：微信会对没有注册的域名屏蔽，影响显示效果，需要使用一个注册的域名中转，并且保留原来的域名，没有注册的域名可以联系我帮你中转
 - ruby的日期格式（%Y-%m-%d %H:%M:%S），java（yyyy-MM-dd HH:mm:ss)
 
