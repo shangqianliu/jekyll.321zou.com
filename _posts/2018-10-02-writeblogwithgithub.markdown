@@ -24,3 +24,5 @@ author: "友"
 1. 如何调整网页风格？
 1. 底层使用了哪些技术？
 1. 有哪些常见问题？
+
+答案就在：[如何用jekyll写博客](https://blog.max.top-min.top/2018/10/02/writeblogwithjekyll.html)
