@@ -5,12 +5,12 @@ date: "2018-10-03 19:35:59 +0800"
 author: "友"
 ---
 
-博客除了改变主题外，其他三个附加功能也很重要：图标、统计、评论，下面就依次说明.
+博客除了改变主题外，其他三个附加功能也很重要：图标、统计、评论，下面依次说明.
 
 ## 图标
-图标是一个网站必须品，但对于开发人员来说，做一个图标还是有难度的，于是网上找一个现成的图标是一条捷径.
+图标是一个网站必须品，但对于开发人员来说，做一个图标还是有难度的，于是网上找一个现成的是一条捷径.
 
-以前发现一个图标网站，推荐给大家：[iconfont](http://www.iconfont.cn) ，按照关键字搜索想要图标，然后找到中意的图标就直接拿来用了，下载格式选择png，如果要做网站的icon，还要进一步处理，直接搜索“在线转换icon”，找到一个网站[easyicon](https://www.easyicon.net/covert/)不错，把图标上传转换为icon之后，添加到根目录，刷新页面，页签上面就图标了.
+以前发现一个图标网站，推荐给大家：[iconfont](http://www.iconfont.cn) ，按照关键字搜索想要图标，然后找到中意的图标就直接拿来用了，下载格式选择png，如果要做网站的icon，还要进一步处理，直接搜索“在线转换icon”，找到一个网站[easyicon](https://www.easyicon.net/covert/)不错，把图标上传转换为icon之后，添加到根目录，改名为：favicon.ico，刷新页面，页签上面就图标了.
 
 ### https问题
 使用https时，会报icon加载错误，是因为加载icon的协议是http与https不一致，导致报错，需要修改源代码，把_layouts/default.html文件中的如下内容
@@ -21,9 +21,9 @@ author: "友"
 ```
 <link rel="shortcut icon" href="/favicon.ico">
 ```
-刷新页面加载正常了.
+刷新后，页面正常加载.
 
-PS：为了写出```{{"{"}}{{"{"}} site.url {{"}}}}```，老费劲了，里面涉及转义字符特殊处理，最后使用hack方式弄出来了.
+PS：为了写出```{{"{"}}{{"{"}} site.url {{"}}}}```，老费劲了，里面涉及转义字符特殊处理，最后使用hack方式弄出来.
 
 ### 统计
 网站统计也是需要的，博客写得好不好，看访问量就知道了.
@@ -37,7 +37,7 @@ PS：为了写出```{{"{"}}{{"{"}} site.url {{"}}}}```，老费劲了，里面�
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?uuid"; //uuid缓换成自己的
+      hm.src = "https://hm.baidu.com/hm.js?uuid"; //uuid换成自己的
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
