@@ -10,7 +10,7 @@ author: "友"
 
 ### 操作
 整体步骤：新建项目->配置分支->配置风格->新建md文件->预览效果，详细步骤如下:
-1. 在github.com上面：[新建项目](https://github.com/new)，强烈建议勾选： Initialize this repository with a README
+1. 在github.com上面：[新建项目](https://github.com/new?_blank)，强烈建议勾选： Initialize this repository with a README
 1. 在上面页签的项目Settings->GitHub Pages中把Source设置为master branch，Save之后，会再相邻位置处理一个新URL，此时访问是404
 1. 在相同位置，点击[Choose a schema]按钮配置主题，再次访问，网页就出现了
 1. 点击[Create new file]按钮，添加新的markdown文件（md后缀名），github.io预览查看，注意路径名要去掉文件后缀md，才能查看转换后的html文件
@@ -25,4 +25,4 @@ author: "友"
 1. 底层使用了哪些技术？
 1. 有哪些常见问题？
 
-答案就在：[如何用jekyll写博客](https://blog.max.top-min.top/2018/10/02/writeblogwithjekyll.html)
+答案就在：[如何用jekyll写博客](https://blog.max.top-min.top/2018/10/02/writeblogwithjekyll.html?_blank)

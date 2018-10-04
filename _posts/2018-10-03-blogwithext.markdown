@@ -10,7 +10,7 @@ author: "友"
 ## 图标
 图标是一个网站必须品，但对于开发人员来说，做一个图标还是有难度的，于是网上找一个现成的是一条捷径.
 
-以前发现一个图标网站，推荐给大家：[iconfont](http://www.iconfont.cn) ，按照关键字搜索想要图标，然后找到中意的图标就直接拿来用了，下载格式选择png，如果要做网站的icon，还要进一步处理，直接搜索“在线转换icon”，找到一个网站[easyicon](https://www.easyicon.net/covert/)不错，把图标上传转换为icon之后，添加到根目录，改名为：favicon.ico，刷新页面，页签上面就图标了.
+以前发现一个图标网站，推荐给大家：[iconfont](http://www.iconfont.cn?_blank) ，按照关键字搜索想要图标，然后找到中意的图标就直接拿来用了，下载格式选择png，如果要做网站的icon，还要进一步处理，直接搜索“在线转换icon”，找到一个网站[easyicon](https://www.easyicon.net/covert/?_blank)不错，把图标上传转换为icon之后，添加到根目录，改名为：favicon.ico，刷新页面，页签上面就图标了.
 
 ### https问题
 使用https时，会报icon加载错误，是因为加载icon的协议是http与https不一致，导致报错，需要修改源代码，把_layouts/default.html文件中的如下内容
@@ -28,7 +28,7 @@ PS：为了写出```{{"{"}}{{"{"}} site.url {{"}}}}```，老费劲了，里面�
 ### 统计
 网站统计也是需要的，博客写得好不好，看访问量就知道了.
 
-单独开发一个统计功能是不现实的，幸好有很多现成的统计系统可以使用，网上一搜，找到百度统计，感觉还不错，注册账号后直接使用，注册地址：[百度统计](https://tongji.baidu.com)
+单独开发一个统计功能是不现实的，幸好有很多现成的统计系统可以使用，网上一搜，找到百度统计，感觉还不错，注册账号后直接使用，注册地址：[百度统计](https://tongji.baidu.com?_blank)
 
 注册完，登录后，进入管理界面，添加应用，添加完后，点击获取代码，就是一段js，这段js实现了统计功能，然后把这段js添加到```_layouts/default.html```中，就是实现了统计功能，很好用
 ```
@@ -49,7 +49,7 @@ PS：为了写出```{{"{"}}{{"{"}} site.url {{"}}}}```，老费劲了，里面�
 评论也是博客的重要功能，为博主和读者之间提供了一条交流通道.
 
 单独开发系统评论功能也是不现实的，幸好有好多专门做评论的系统，网上搜了几个，其他网站推荐：valine（缬氨酸），估计是化学专业的同学开发的，
-注册后[valine](https://valine.js.org/)，登录进入控制台，然后注册一个应用，就不像百度那样直接复制js了，网上搜索之后，在一个现成的网站上面，复制了他的源代码，然后把对应的appId和appKey换成【应用Key】里面对应字段；试了好一阵子，评论框终于出现了（复制代码不全，修改不全等等，下面弄了一个全的）.代码如下：
+注册后[valine](https://valine.js.org/?_blank)，登录进入控制台，然后注册一个应用，就不像百度那样直接复制js了，网上搜索之后，在一个现成的网站上面，复制了他的源代码，然后把对应的appId和appKey换成【应用Key】里面对应字段；试了好一阵子，评论框终于出现了（复制代码不全，修改不全等等，下面弄了一个全的）.代码如下：
 ```
 
 <!-- 评论 -->
@@ -86,8 +86,8 @@ Code 403: 访问被api域名白名单拒绝，请检查你的安全域名设置.
 再看看后，发现有访问数量限制，但是博客访问量不大，应该够用.
 
 ### 参考和资源
-- [评论参考](https://www.bluelzy.com/)
-- [iconfont](http://www.iconfont.cn)
-- [easyicon](https://www.easyicon.net/covert/)
-- [百度统计](https://tongji.baidu.com)
-- [valine](https://valine.js.org/)
+- [评论参考](https://www.bluelzy.com/?_blank)
+- [iconfont](http://www.iconfont.cn?_blank)
+- [easyicon](https://www.easyicon.net/covert/?_blank)
+- [百度统计](https://tongji.baidu.com?_blank)
+- [valine](https://valine.js.org/?_blank)

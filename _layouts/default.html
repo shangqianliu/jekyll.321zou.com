@@ -113,6 +113,14 @@
     {% endif %}
     </script>
 
+    <!-- 链接在新窗口打开, 参考：https://blog.csdn.net/gao497278979/article/details/52089399 -->
+    <script>
+      var aTagArr = [].slice.apply(document.getElementsByTagName("a"));
+
+      aTagArr.forEach(function (e, i) {
+        e.href.indexOf("_blank") > -1 ? e.target = "_blank" : null;
+      });
+    </script>
   </body>
 
 
