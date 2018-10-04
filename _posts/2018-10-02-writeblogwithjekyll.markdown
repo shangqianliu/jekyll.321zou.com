@@ -94,8 +94,12 @@ layout: post
 ### atom集成
 上面都是在命令行下面操作，比较麻烦，github的atom编辑器，有jekyll插件，安装上后，就可以在atom进行编写博客、预览博客，默认每次保存都会生成静态页面，方便预览； 并atom与github集成很好，方便git提交
 
+具体操作
+- 安装：菜单->Packages->Settings view->Install Packages/Schemas 搜索包：jekyll，然后点击安装
+- 使用：菜单->Packages->Jekyll->Toggle Server(启停服务)、New Post(新建博客)、其他功能
+
 ### 与github集成
-把github项目clone下来之后，把本地博客内容全部复制进去，然后右下角提交，这样github和本地都是通用想效果
+把github项目clone下来之后，把本地博客内容全部复制进去，然后右下角提交，这样github和本地就是相同效果
 
 ### 高级部分
 - jekyll 修改域名和端口： ```jekyll s -w --host=0.0.0.0 --port 8000 ```
