@@ -5,12 +5,19 @@ tagline: 关于网站介绍
 permalink: /about.html
 ---
 
-记录max.top-min.top的发展过程
+## 猜想
+top(max)-top(min) = top(max-min) = (max-min).top = max.top-min.top
 
-[max.top-min.top](https://max.top-min.top)
+## 理念
+先优化到极限，然后对极限进行优化
 
-2018-10-02
--
+## 记录
+
+### 2018-10-04
+- 让链接在新窗口打开
+- 支持本站链接不改变上下文，避免微信拦截
+
+### 2018-10-02
 - 添加icon
 - 添加评论
 - 添加百度统计
