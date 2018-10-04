@@ -49,7 +49,7 @@ PS：为了写出```{{"{"}}{{"{"}} site.url {{"}}}}```，老费劲了，里面�
 评论也是博客的重要功能，为博主和读者之间提供了一条交流通道.
 
 单独开发系统评论功能也是不现实的，幸好有好多专门做评论的系统，网上搜了几个，其他网站推荐：valine（缬氨酸），估计是化学专业的同学开发的，
-注册后[valine](https://valine.js.org/?_blank)，登录进入控制台，然后注册一个应用，就不像百度那样直接复制js了，网上搜索之后，在一个现成的网站上面，复制了他的源代码，然后把对应的appId和appKey换成【应用Key】里面对应字段；试了好一阵子，评论框终于出现了（复制代码不全，修改不全等等，下面弄了一个全的）.代码如下：
+注册后[valine](https://leancloud.cn/?_blank)，登录进入控制台，然后注册一个应用，就不像百度那样直接复制js了，网上搜索之后，在一个现成的网站上面，复制了他的源代码，然后把对应的appId和appKey换成【应用Key】里面对应字段；试了好一阵子，评论框终于出现了（复制代码不全，修改不全等等，下面弄了一个全的）.代码如下：
 ```
 
 <!-- 评论 -->
@@ -90,4 +90,5 @@ Code 403: 访问被api域名白名单拒绝，请检查你的安全域名设置.
 - [iconfont](http://www.iconfont.cn?_blank)
 - [easyicon](https://www.easyicon.net/covert/?_blank)
 - [百度统计](https://tongji.baidu.com?_blank)
-- [valine](https://valine.js.org/?_blank)
+- [valine注册](https://leancloud.cn?_blank)
+- [valine-github](https://github.com/xCss/Valine-docs/blob/master/source/index.md?_blank)
