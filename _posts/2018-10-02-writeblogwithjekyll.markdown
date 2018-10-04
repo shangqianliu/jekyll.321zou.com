@@ -22,7 +22,7 @@ jekyll使用ruby开发，ruby使用gem管理软件包（类似于java里面的ma
 ```
 # 安装jekyll的开发语言ruby，ruby中自带gem
 brew install ruby  # macos
-# yum install ruby # linux ruby版本要>=2.1
+# yum install ruby # linux ruby版本要>=2.1;  详细说明见末尾部分
 # 需要安装，不安装报错
 gem install bundler
 
@@ -113,6 +113,23 @@ layout: post
 - 定制域名：微信会对没有注册的域名屏蔽，影响显示效果，需要使用一个注册的域名中转，并且保留原来的域名，没有注册的域名可以联系我帮你中转
 - ruby的日期格式（%Y-%m-%d %H:%M:%S），java（yyyy-MM-dd HH:mm:ss）
 - 新窗口打开链接，直接写html，添加```target="_blank"``` ```<a href="/2018/10/01/writeblogwithgithub.html" target="_blank">如何用github写博客</a>```
+
+#### ruby yum安装
+默认安装是2.0，但是需要jekyll需要2.1以上，源码按照依赖比较麻烦，使用yum安装,下面安装jekyll时，报缺少config.h的错误，换成源码安装，见下面
+```
+yum install centos-release-scl-rh
+yum install rh-ruby22 -y
+scl enable rh-ruby22 bash
+ruby -v
+```
+#### ruby源码安装
+版本：2.3.6
+```
+wget https://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.6.tar.bz2
+tar -xjf ruby-2.3.6.tar.bz2
+cd ruby-2.3.6
+./configure && make && make install
+```
 
 ### 总结
 1. 安装jekyll
