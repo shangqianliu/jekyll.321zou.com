@@ -112,6 +112,7 @@ layout: post
   - 问题2解决：```cd /usr/local/include/ruby-2.3.0 && ln -s . include```
 - 定制域名：微信会对没有注册的域名屏蔽，影响显示效果，需要使用一个注册的域名中转，并且保留原来的域名，没有注册的域名可以联系我帮你中转
 - ruby的日期格式（%Y-%m-%d %H:%M:%S），java（yyyy-MM-dd HH:mm:ss）
+- 新窗口打开链接，直接写html，添加```target="_blank"``` ```<a href="/2018/10/01/writeblogwithgithub.html" target="_blank">如何用github写博客</a>```
 
 ### 总结
 1. 安装jekyll
@@ -132,3 +133,5 @@ layout: post
 - [ruby安装](http://www.runoob.com/ruby/ruby-installation-unix.html?_blank)
 - [ruby安装问题解决](http://rensanning.iteye.com/blog/1927921?_blank)
 - [Gemfile文件](https://www.cnblogs.com/lwh-note/p/9177726.html?_blank)
+- [新窗口打开链接1](https://blog.csdn.net/so_geili/article/details/53025317?_blank)
+- [新窗口打开链接2](https://blog.csdn.net/gao497278979/article/details/52089399?_blank)
