@@ -16,6 +16,7 @@ top(max)-top(min) = top(max-min) = (max-min).top = max.top-min.top
 ### 2018-10-04
 - 让链接在新窗口打开
 - 支持本站链接不改变上下文，避免微信拦截
+- 添加【不蒜子】统计功能，在网站footer部分实时显示统计数据
 
 ### 2018-10-02
 - 添加icon
