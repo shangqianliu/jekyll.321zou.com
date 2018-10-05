@@ -26,4 +26,4 @@ author: "友"
 1. 有哪些常见问题？
 
 答案就在：
-<a href="/2018/10/02/writeblogwithjekyll.html" target="_blank">如何用jekyll写博客</a>
+[如何用jekyll写博客](/2018/10/02/2018-10-02-writeblogwithjekyll.html)

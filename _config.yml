@@ -11,3 +11,5 @@ baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empt
 theme: jekyll-theme-cayman-blog
 
 baidu_analytics: true
+
+permalink: /:categories/:year/:month/:day/:year-:month-:day-:title:output_ext
