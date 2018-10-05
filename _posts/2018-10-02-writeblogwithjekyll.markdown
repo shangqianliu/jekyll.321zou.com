@@ -135,7 +135,7 @@ target="_blank"
 <a href="/2018/10/01/writeblogwithgithub.html" target="_blank">如何用github写博客</a>
 ```
 
-#### ruby yum安装
+### ruby yum安装
 默认安装是2.0，但是需要jekyll需要2.1以上，源码按照依赖比较麻烦，使用yum安装,下面安装jekyll时，报缺少config.h的错误，换成源码安装，见下面
 ```
 yum install centos-release-scl-rh
@@ -143,7 +143,7 @@ yum install rh-ruby22 -y
 scl enable rh-ruby22 bash
 ruby -v
 ```
-#### ruby源码安装
+### ruby源码安装
 版本：2.3.6
 ```
 wget https://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.6.tar.bz2
@@ -153,6 +153,7 @@ cd ruby-2.3.6
 ```
 
 ## 总结
+总结以下步骤
 1. 安装jekyll
 1. 生成博客空间
 1. 安装主题

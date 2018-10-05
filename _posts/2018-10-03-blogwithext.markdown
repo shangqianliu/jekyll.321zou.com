@@ -23,7 +23,7 @@ author: "友"
 ```
 刷新后，页面正常加载.
 
-### 统计
+## 统计
 网站统计也是需要的，博客写得好不好，看访问量就知道了.
 
 单独开发一个统计功能是不现实的，幸好有很多现成的统计系统可以使用，网上一搜，找到百度统计，感觉还不错，注册账号后直接使用，注册地址：[百度统计](https://tongji.baidu.com?_blank)
@@ -87,7 +87,7 @@ Code 403: 访问被api域名白名单拒绝，请检查你的安全域名设置.
 
 再看看后，发现有访问数量限制，但是博客访问量不大，应该够用.
 
-### 参考和资源
+## 参考和资源
 - [评论参考](https://www.bluelzy.com/?_blank)
 - [iconfont](http://www.iconfont.cn?_blank)
 - [easyicon](https://www.easyicon.net/covert/?_blank)
