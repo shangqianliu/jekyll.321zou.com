@@ -160,7 +160,7 @@ cd ruby-2.3.6
 1. 与github集成
 1. 与atom集成：编写->预览->提交->查看->分享
 1. 处理微信域名屏蔽
-1. 微调、优化
+1. 微调、优化、改进
 
 ## 参考
 - [jekyll中文站](https://www.jekyll.com.cn/?_blank)
