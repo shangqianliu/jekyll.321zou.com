@@ -4,3 +4,5 @@ Gemfile.lock
 *.swp
 .jekyll-metadata
 .DS_Store
+_posts
+images
