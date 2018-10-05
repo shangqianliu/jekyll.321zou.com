@@ -15,7 +15,7 @@ author: "友"
 ### https问题
 使用https时，会报icon加载错误，是因为加载icon的协议是http与https不一致，导致报错，需要修改源代码，把_layouts/default.html文件中的如下内容
 ```
-<link rel="shortcut icon" href="{{"{"}}{{"{"}} site.url {{"}}}}/favicon.ico">
+<link rel="shortcut icon" href="{{site.url}}/favicon.ico">
 ```
 改成
 ```
@@ -23,14 +23,16 @@ author: "友"
 ```
 刷新后，页面正常加载.
 
-PS：为了写出```{{"{"}}{{"{"}} site.url {{"}}}}```，老费劲了，里面涉及转义字符特殊处理，最后使用hack方式弄出来.
-
 ### 统计
 网站统计也是需要的，博客写得好不好，看访问量就知道了.
 
 单独开发一个统计功能是不现实的，幸好有很多现成的统计系统可以使用，网上一搜，找到百度统计，感觉还不错，注册账号后直接使用，注册地址：[百度统计](https://tongji.baidu.com?_blank)
 
-注册完，登录后，进入管理界面，添加应用，添加完后，点击获取代码，就是一段js，这段js实现了统计功能，然后把这段js添加到```_layouts/default.html```中，就是实现了统计功能，很好用
+注册完，登录后，进入管理界面，添加应用，添加完后，点击获取代码，就是一段js，这段js实现了统计功能，然后把这段js添加到
+```
+_layouts/default.html
+```
+中，就是实现了统计功能，很好用
 ```
 <!-- 百度统计 -->
   <script>
