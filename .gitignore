@@ -3,3 +3,4 @@ Gemfile.lock
 .sass-cache
 *.swp
 .jekyll-metadata
+.DS_Store
