@@ -1,7 +1,5 @@
 #!/bin/bash
 
-killall gitupdate.sh
-
 while true
 do
     git pull
