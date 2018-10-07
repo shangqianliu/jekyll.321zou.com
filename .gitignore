@@ -6,3 +6,5 @@ Gemfile.lock
 .DS_Store
 _posts
 images
+about.md
+contact.md
